@@ -11,6 +11,8 @@ import MessageKit
 
 
 class ChatRoomMessagesViewController: MessagesViewController {
+    var messages: [Message] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         messagesCollectionView.messagesDataSource = self
@@ -23,15 +25,15 @@ class ChatRoomMessagesViewController: MessagesViewController {
 
 extension ChatRoomMessagesViewController: MessagesDataSource {
     func currentSender() -> SenderType {
-        <#code#>
+        return messages[0].sender
     }
     
     func messageForItem(at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> MessageType {
-        <#code#>
+        return messages[0]
     }
     
     func numberOfSections(in messagesCollectionView: MessagesCollectionView) -> Int {
-        <#code#>
+        return 0
     }
     
     

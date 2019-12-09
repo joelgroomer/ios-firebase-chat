@@ -22,4 +22,13 @@ class ChatRoom {
         self.created = created
         self.lastUpdated = lastUpdated
     }
+    
+    var asDictionary: [String : Any] {
+        var dic: [String : Any] = [:]
+        dic["chatRoomID"] = chatRoomID
+        dic["title"] = title
+        dic["created"] = created
+        dic["lastUpdated"] = lastUpdated
+        return dic
+    }
 }

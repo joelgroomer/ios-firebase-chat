@@ -21,4 +21,13 @@ class Message: MessageType {
         self.sentDate = sentDate
         self.kind = kind
     }
+    
+    var asDictionary: [String : Any] {
+        var dic: [String : Any] = [:]
+        dic["sender"] = sender
+        dic["messageId"] = messageId
+        dic["sentDate"] = sentDate
+        dic["kind"] = kind
+        return dic
+    }
 }

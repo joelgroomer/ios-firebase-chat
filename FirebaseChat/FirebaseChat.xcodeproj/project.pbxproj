@@ -18,6 +18,7 @@
 		5DC5D247239C2F3B009343EF /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC5D246239C2F3B009343EF /* ChatRoom.swift */; };
 		5DC5D249239C2F48009343EF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC5D248239C2F48009343EF /* Message.swift */; };
 		5DC5D24B239C333B009343EF /* ChatRoomMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC5D24A239C333B009343EF /* ChatRoomMessagesViewController.swift */; };
+		5DC5D24E239E087C009343EF /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC5D24D239E087C009343EF /* ChatController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		5DC5D246239C2F3B009343EF /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		5DC5D248239C2F48009343EF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		5DC5D24A239C333B009343EF /* ChatRoomMessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomMessagesViewController.swift; sourceTree = "<group>"; };
+		5DC5D24D239E087C009343EF /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 		75A62ACB6307B7E2026EF770 /* Pods-FirebaseChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseChat.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseChat/Pods-FirebaseChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,7 @@
 		5DC5D22B239C1753009343EF /* FirebaseChat */ = {
 			isa = PBXGroup;
 			children = (
+				5DC5D24C239E0473009343EF /* Controllers */,
 				5DC5D243239C2D1E009343EF /* Model */,
 				5DC5D242239C2D0A009343EF /* View Controllers */,
 				5DC5D22C239C1753009343EF /* AppDelegate.swift */,
@@ -100,6 +103,14 @@
 				5DC5D248239C2F48009343EF /* Message.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5DC5D24C239E0473009343EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DC5D24D239E087C009343EF /* ChatController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		6E0BE162DA401EAEFDFFB739 /* Frameworks */ = {
@@ -237,6 +248,7 @@
 			files = (
 				5DC5D22D239C1753009343EF /* AppDelegate.swift in Sources */,
 				5DC5D22F239C1753009343EF /* SceneDelegate.swift in Sources */,
+				5DC5D24E239E087C009343EF /* ChatController.swift in Sources */,
 				5DC5D249239C2F48009343EF /* Message.swift in Sources */,
 				5DC5D247239C2F3B009343EF /* ChatRoom.swift in Sources */,
 				5DC5D245239C2D5C009343EF /* ChatRoomsTableViewController.swift in Sources */,
